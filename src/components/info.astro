@@ -1,0 +1,168 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="mt-24">
+  <section class="info-section">
+    <div class="columns">
+      <div class="column">
+        <h2
+          class="text-4xl text-blue-300 lg:text-3xl font-bold lg:tracking-tight">
+          American Sofos Shop
+        </h2>
+        <hr />
+        <br />
+        <div class="row">
+          <div class="flex items-center mt-2 space-x-2">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:map-marker" />
+            <span>Santa Rosa de Viterbo, Boyacá</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:envelope" /><a
+              href="mailto:americansofosshop@gmail.com"
+              >americansofosshop@gmail.com</a
+            >
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <Icon class="text-gray-400 w-4 h-4" name="uil:phone" /><a
+              href="tel:+57 (312) 385 7658">+57 (312) 385 7658</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="text-4xl lg:text-3xl font-bold lg:tracking-tight">
+          Productos
+        </h2>
+        <hr />
+        <br />
+        <ul>
+          <li>Camisas para hombre</li>
+          <li>Blusas para mujeres</li>
+          <li>Chaquetas</li>
+          <li>Accesorios para la cabeza</li>
+          <li>Bolsos</li>
+          <li>Correas</li>
+          <li>Pantalones</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h2 class="text-4xl lg:text-3xl font-bold lg:tracking-tight">
+          Más información
+        </h2>
+        <hr />
+        <br />
+        <ul>
+          <li><a href="/about">Acerca de</a></li>
+          <li><a href="/contact">Contacto</a></li>
+          <li><a href="http://localhost:4322/">Tienda</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="social-links">
+      <h3 class="text-4xl lg:text-2xl font-bold lg:tracking-tight">
+        Síguenos en
+      </h3>
+      <div class="social-buttons">
+        <a href="https://www.x.com" target="_blank" class="social-button">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          class="social-button">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          class="social-button">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  .info-section {
+    background-color: #001f3f;
+    color: white;
+    padding: 2rem;
+  }
+
+  .columns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+
+  .column {
+    flex: 1;
+    margin: 0 1rem;
+  }
+
+  .column h2 {
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    border: 1px solid gray;
+    margin: 0.5rem 0;
+  }
+
+  .row p {
+    margin: 0.5rem 0;
+  }
+
+  .social-links {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    text-decoration: none;
+  }
+
+  .social-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+
+  .social-button:hover {
+    background-color: #0056b3;
+  }
+
+  .social-button i {
+    font-size: 1.5rem;
+  }
+
+  .column ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .column ul li a:hover {
+    text-decoration: underline;
+  }
+</style>

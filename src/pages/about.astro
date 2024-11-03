@@ -1,0 +1,28 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+
+---
+
+<Layout title="About">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Acerca de</Fragment>
+      <Fragment slot="desc">Somos un pequeño equipo apasionado.</Fragment>
+    </Sectionhead>
+
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-gray-800">
+        👚👜 Estilo y calidad en cada producto que ofrecemos 🧢👗
+      </h2>
+      <p class="text-lg leading-relaxed text-slate-500">
+        Desde ropa de moda y accesorios únicos hasta esos detalles que
+        complementan tu día a día como bolsos, correas, gorras y más. 👚🧢🎒 Nos
+        enorgullece brindarte calidad y precios justos, siempre con una atención
+        cercana y amigable. ¡Visítanos y encuentra ese detalle especial que
+        estás buscando! 😄🌟
+      </p>
+    </div>
+  </Container>
+</Layout>
